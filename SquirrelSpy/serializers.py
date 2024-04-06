@@ -13,6 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
         extra_kwargs = {'password': {'write_only': True}}
 
 class SightingSerializer(serializers.ModelSerializer):
+    image = serializers.ImageField(required=False)
+
     class Meta:
         model = Sighting
-        fields = ['id', 'user', 'squirrel', 'lat', 'long', 'time', 'behavior', 'certainty_level', 'is_verified', 'verification_comment', 'image']
+        fields = ['id', 'user', 'squirrel', 'lat', 'long', 'time', 'behavior', 'certainty_level', 'is_verified', 'verification_comment', 'comment', 'image']

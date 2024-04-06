@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-&85um&y&1ezhx4o^imgc3s0i4ty3s_a*pdx^f@#unn6h-_)a2y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', 'localhost']
 
 AUTH_USER_MODEL = 'SquirrelSpy.User'
 

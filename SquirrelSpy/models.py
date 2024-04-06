@@ -37,10 +37,11 @@ class Sighting(models.Model):
     lat = models.FloatField()
     long = models.FloatField()
     time = models.DateTimeField()
+    comment = models.CharField(max_length=200)
     behavior = models.CharField(max_length=50)
     certainty_level = models.IntegerField(default=2)
     is_verified = models.BooleanField(default=False)
-    verification_comment = models.CharField(null=True, max_length=50)
+    verification_comment = models.CharField(default=None, null=True, max_length=50)
     image = models.ImageField(upload_to='sighting_images/', blank=True, null=True)
 
     def __str__(self):
