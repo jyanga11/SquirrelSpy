@@ -6,7 +6,7 @@ SquirrelSpy is a community-driven biological tracking system designed to utilize
 ### Features
 
 #### Mobile App
-  - User-Friendly Interface – Easily report squirrel sightings with location, time, and optional notes.
+  - User-Friendly Interface – Easily report squirrel sightings with location, time, and more.
   - Photo Uploads – Attach images for verification.
   - GPS Integration – Auto-fetch location to streamline submissions.
   - Data Visualization – View past sightings on an interactive map.
@@ -24,5 +24,5 @@ SquirrelSpy is a community-driven biological tracking system designed to utilize
 #### Tech Stack
   - Frontend (Web & Mobile): React.js, React Native
   - Backend: Django (Python)
-  - Database: SQLite
+  - Database: MySQL
   - APIs & Libraries: Expo (Image & Location Data)
